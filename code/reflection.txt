@@ -1,4 +1,4 @@
-Write your reflection here.
+ngl this was light work fr. typed some stuff, got things like calculators to work. no questions. no comments.
 
 See reflection.md for what makes a good reflection — be specific, use the
 terminology from class, and make it actionable.
