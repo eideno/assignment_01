@@ -1,4 +1,8 @@
-ngl this was light work fr. typed some stuff, got things like calculators to work. no questions. no comments.
-
-See reflection.md for what makes a good reflection — be specific, use the
-terminology from class, and make it actionable.
+As I completed this assignment, I learned that having the main logic in its own module such as bill.py lets the interfaces use the same imported functions.
+ The CLI within console.py, the Jupyter notebook file, and the Streamlit app interface call tip_amount, grand_total, split_evenly, and is_generous accordingly.
+  Therefore, here only needs to be one version of math code reused in three separate places. 
+  Testing through unit and integration tests gave me insights into carefully reading through the assertions and not making assumptions. 
+  For example, when test_console_app failed, I set a breakpoint on the line that split the bill and ran the program, entering 50, 20, and 4 at the prompts. 
+  The execution paused there, and the VARIABLES tab showed that subtotal equaled 50.0 while total equaled 60.0. 
+  They are two distinct variables yet the incorrect one had been assigned to the bug.
+ While I was able to work it out this time, this may prove troublesome in future projects so I would like to practice using the debugger tool specifically the VARIABLES tab to debug failed test suites along with gaining insight into floating-point arithmetic.
